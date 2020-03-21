@@ -5,7 +5,7 @@ module.exports = {
     help: 'Get a random meme from Imgur.',
     module: 'Fun',
     level: 0,
-    nsfw: true // don't know what flag to set
+    nsfw: false // don't know what flag to set
   },
   fn: function (msg) {
     request.get(`https://api.imgur.com/3/g/memes/viral/${Math.floor((Math.random() * 8) + 1)}`) // 20 Memes per page, 160 Memes
