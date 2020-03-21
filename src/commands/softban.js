@@ -3,7 +3,7 @@ module.exports = {
     help: 'Softban a user.',
     usage: '@user OR <userid> [reason]',
     module: 'Admin',
-    level: 0,
+    level: 6,
     alias: ['messageban'],
     noDM: true,
     permAddons: ['Ban Members']

@@ -3,7 +3,7 @@ module.exports = {
     help: 'Kick a user.',
     usage: '@user [reason]',
     module: 'Admin',
-    level: 0,
+    level: 6,
     noDM: true,
     alias: ['boot'],
     permAddons: ['Kick Members']

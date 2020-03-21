@@ -3,7 +3,7 @@ module.exports = {
     help: 'Delete multiple messages at once.',
     usage: '[author] @user <number>',
     module: 'Admin',
-    level: 0,
+    level: 6,
     timeout: 5,
     noDM: true,
     alias: ['clean', 'filter'],

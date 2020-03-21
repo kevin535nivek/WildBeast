@@ -3,7 +3,7 @@ module.exports = {
     help: 'Change the color of a role.',
     usage: '<role name> <hex value>',
     module: 'Admin',
-    level: 0,
+    level: 6,
     timeout: 5
   },
   fn: function (msg, suffix) {

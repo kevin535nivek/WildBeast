@@ -3,7 +3,7 @@ module.exports = {
     help: 'Give a role to user or users.',
     usage: '@user @user2 <role name>',
     module: 'Admin',
-    level: 0,
+    level: 6,
     noDM: true,
     alias: ['applyrole'],
     permAddons: ['Manage Roles']
