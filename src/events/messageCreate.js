@@ -44,7 +44,11 @@ module.exports = async (ctx) => {
         // IF deny includes all BUT allow includes module or cmd, pass
         // ELSE, block
       }
-      if (msg.channel.guild && commands[cmd].meta.nsfw && !msg.channel.nsfw) return global.i18n.send('NSFW_NOT_ENABLED', msg.channel)
+      if (msg.channel.guild && commands[cmd].meta.nsfw && !msg.channel.nsfw) {
+        msg.channel.createMessage('Nice try, ' + msg.author.mention)
+        msg.channel.createMessage('https://thumbs.gfycat.com/SmoggyHilariousBaiji-size_restricted.gif')
+        return global.i18n.send('NSFW_NOT_ENABLED', msg.channel)
+      }
       if (commands[cmd].meta.level === Infinity && !masters.includes(msg.author.id)) {
         return global.i18n.send('BOT_OWNER_ONLY', msg.channel)
       }
