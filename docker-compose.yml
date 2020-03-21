@@ -29,6 +29,6 @@ services:
       - arango
     command: npm run-script dbcreate
   lavalink:
-    image: fredboat/lavalink:v3
+    image: fredboat/lavalink:master-v3.2.2
     env_file:
       - lavalink.env
